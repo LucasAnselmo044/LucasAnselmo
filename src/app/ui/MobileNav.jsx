@@ -36,7 +36,14 @@ const MobileNav = () => {
         </SheetTrigger>
         <SheetContent className="flex flex-col">
             <div className="mt-32 mb-40 text-center text-2xl"> LucasAnselmo044 </div>
-            <nav>test</nav>
+            <nav className="flex flex-col justify-center items-center gap-8">
+                {Links.map((link, index) => {
+                    return <Link href={link.path} 
+                            key={index} 
+                            className={`${link.path === pathname && "text-blue-500 border-b-2 border-blue-500"} "text-xl capitalize hover:text-blue-500 transition-all`}>
+                                {link.name}</Link>
+                })}
+            </nav>
         </SheetContent>
     </Sheet>
 }
