@@ -9,7 +9,7 @@ const Photo = () => {
     }}}>  
         <motion.div initial={{opacity: 0}} animate={{opacity: 1, transition: {delay: 2.4, duration: 0.4, ease: "easeInOut"
     }}}
-        className="w-[298px] h-[298px] xl:w-[575px] xl:h-[468px] mix-blend-lighten absolute">
+        className="w-[298px] h-[298px] xl:w-[558px] xl:h-[478px] mix-blend-lighten absolute">
             <Image src="/assets/portfolio.png" priority quality={100} fill alt="" className="object-contain"/>
         </motion.div>
 
