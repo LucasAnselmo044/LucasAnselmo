@@ -29,7 +29,7 @@ const projects = [
     num: '02',
     category: 'fullstack',
     title: 'TypingTest',
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eius doloribus deleniti",
+    description: "A dynamic web application built to challenge and enhance typing skills. Features include multi-language support (English and Portuguese), adjustable difficulty levels, real-time speed and accuracy tracking, and a clean, responsive design developed with TypeScript, Next.js, and Tailwind CSS.",
     stack: [
       {name: "Next.Js"},
       {name: "Typescript"},
