@@ -9,6 +9,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@radix
 import Link from 'next/link';
 import Image from 'next/image';
 import { Description } from '@radix-ui/react-dialog';
+import ProjectSliderButtons from '@/components/ui/ProjectSliderButtons';
 
 const projects = [
   {
@@ -37,6 +38,20 @@ const projects = [
     image: "/assets/projects/typingtest.png",
     live: "",
     github: ""
+  },
+  {
+    num: '03',
+    category: 'FrontEnd',
+    title: 'Simple To Do List',
+    description: "A simple and functional To-Do List application built with HTML, CSS, and JavaScript. It allows users to manage tasks with features like adding, editing, and deleting tasks. While currently front-end only, the project is designed to evolve into a full-stack application, integrating a database for task persistence and advanced features.",
+    stack: [
+      {name: "HTML5"},
+      {name: "Css"},
+      {name: "Javascript"}
+    ],
+    image: "/assets/projects/typingtest.png",
+    live: "",
+    github: ""
   }
 ]
 
@@ -51,7 +66,7 @@ const Projects = () => {
   }
 
   return (
-    <motion.section initial={{opacity: 0}} animate={{opacity: 1}} className='min-h-[80vh] flex flex-col justify-center py-12 xl:px-0'>
+    <motion.section initial={{opacity: 0}} animate={{opacity: 1, transition: {delay: 2.4, duration:0.4, ease: 'easeInOut'}}} className='min-h-[80vh] flex flex-col justify-center py-12 xl:px-0'>
       <div className='container mx-auto'>
         <div className='flex flex-col xl:flex-row xl:gap-[30px]'>
           <div className='w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none'>
@@ -104,18 +119,18 @@ const Projects = () => {
               className='w-full'>
                 <div className='h-[460px] relative group flex justify-center items-center bg-blue-950/20'>
                 { /* Overlay */ }
-                  <div>
+                  <div className='absolute top-0 bottom-0 w-full h-full bg-black'>
 
                   </div>
                 { /* Image */}
                   <div>
-                    <Image src={project.image} fill className='object-cover' alt=''>
-                    
-                    </Image>
+                    <Image src={project.image} fill className='object-cover' alt=''></Image>
                   </div>
                 </div>
                 </SwiperSlide>;
-            })}</Swiper>
+            })}
+            <ProjectSliderButtons containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none" btnStyles="hover:text-blue-800 text-blue-500 text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"/>
+            </Swiper>
           </div>
         </div>
       </div>
