@@ -1,7 +1,7 @@
 'use client'
 
 import {FaNodeJs, FaReact, FaJs, FaHtml5, FaCss3, FaTypo3} from 'react-icons/fa'
-import { SiTailwindcss, SiNextdotjs } from 'react-icons/si'
+import { SiTailwindcss, SiNextdotjs, SiTypescript, SiJavascript } from 'react-icons/si'
 
 const about = {
   title: 'About me',
@@ -89,12 +89,24 @@ const skills = {
     name: 'CSS',
     },
     {
-    icon: <FaJs />,
+      icon: <SiTailwindcss />,
+      name: 'TailwindCss'
+    },
+    {
+    icon: <SiJavascript />,
     name: 'Javascript',
     },
     {
+    icon: <SiTypescript />,
+    name: 'Typescript'
+    },
+    {
+      icon: <SiNextdotjs />,
+      name: 'Next.Js'
+    },
+    {
     icon: <FaReact />,
-    name: 'React.js',
+    name: 'React.Js',
     },
   ]
 }
