@@ -58,6 +58,18 @@ const projects = [
     github: "",
     workingOn: true,
   },
+  {
+    num: "04",
+    category: "FrontEnd",
+    title: "CSS Color Generator",
+    description:
+      "A simple site that deliveres any random CSS color everytime you click on button.",
+    stack: [{ name: "HTML5" }, { name: "Css" }, { name: "Javascript" }],
+    image: "/assets/projects/csscolorgenerator.png",
+    live: "",
+    github: "",
+    workingOn: false,
+  },
 ];
 
 const Projects = () => {
