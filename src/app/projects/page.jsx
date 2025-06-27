@@ -56,6 +56,7 @@ const projects = [
     image: "/assets/projects/simpletodolist.png",
     live: "",
     github: "",
+
     workingOn: true,
   },
   {
@@ -69,6 +70,18 @@ const projects = [
     live: "",
     github: "",
     workingOn: false,
+  },
+  {
+    num: "05",
+    category: "Fullstack",
+    title: "Pomodorus - Study Better!",
+    description:
+      "A site that will help you to study better, based on Pomodoro Study Method.",
+    stack: [{ name: "Next.Js" }, { name: "Typescript" }],
+    image: "/assets/projects/pomodorus.png",
+    live: "",
+    github: "https://github.com/LucasAnselmo044/Pomodoro2",
+    workingOn: true,
   },
 ];
 

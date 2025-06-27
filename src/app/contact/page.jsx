@@ -75,11 +75,9 @@ const Contact = () => {
         <div className="flex flex-col xl:flex-row gap-[30px]">
           <div className="xl:w-[54%] order-2 xl:order-none">
             {" "}
-            {/* Adjusted xl:w-[54%] for consistency */}
-            {/* 👇 5. Add Handler to the Form */}
             <form
               className="flex flex-col gap-6 p-10 bg-[#0c142c] rounded-xl"
-              onSubmit={handleSendMessage} // Call the function on submit
+              onSubmit={handleSendMessage}
             >
               <h3 className="text-4xl text-blue-500">
                 Let&apos;s work together
@@ -88,38 +86,37 @@ const Contact = () => {
                 Get in touch to discuss your project!
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {/* 👇 3. Link Inputs to State */}
                 <Input
-                  type="text" // Corrected to 'text'
+                  type="text"
                   placeholder="First Name"
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
-                  required // Optional: make field required
+                  required
                 />
                 <Input
-                  type="text" // Corrected to 'text'
+                  type="text"
                   placeholder="Last Name"
                   value={lastName}
                   onChange={(e) => setLastName(e.target.value)}
-                  required // Optional: make field required
+                  required
                 />
                 <Input
                   type="email"
                   placeholder="Email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  required // Optional: make field required
+                  required
                 />
                 <Input
-                  type="tel" // 'tel' is more appropriate for phone
+                  type="tel"
                   placeholder="Phone (optional)"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                 />
               </div>
               <Select
-                onValueChange={(value) => setService(value)} // Captures value change
-                value={service} // Defines the current value
+                onValueChange={(value) => setService(value)}
+                value={service}
               >
                 <SelectTrigger className="w-full">
                   <SelectValue placeholder="Select a service (optional)" />
@@ -140,16 +137,14 @@ const Contact = () => {
                 placeholder="Type your message here..."
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                required // Optional: make field required
+                required
               />
-              {/* Submit button */}
               <Button type="submit" size="md" className="max-w-40">
                 Send message
               </Button>
             </form>
           </div>
           <div className="flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-8 xl:mb-0">
-            {/* Content for the right column, if any, like your contact information */}
             <ul className="flex flex-col gap-10">
               {info.map((item, index) => {
                 return (
@@ -164,7 +159,7 @@ const Contact = () => {
                   </li>
                 );
               })}
-              {/* Adding phone and location information if desired */}
+              ======
               <li className="flex items-center gap-6">
                 <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-[#0c142c] text-blue-500 rounded-md flex items-center justify-center">
                   <div className="text-[28px]">
@@ -174,7 +169,6 @@ const Contact = () => {
                 <div className="flex-1">
                   <p className="text-white/60">Phone</p>
                   <h3 className="text-xl">{whatsappPhoneNumber}</h3>{" "}
-                  {/* Showing the WhatsApp number */}
                 </div>
               </li>
               {/* Location example
