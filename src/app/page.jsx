@@ -15,10 +15,7 @@ const Home = () => {
               <span className="text-blue-500"> Lucas Anselmo </span>
             </h1>
             <h3 className="h3">I&apos;m a</h3>
-            <h2 className="h3 text-blue-500">
-              {" "}
-              Full-Stack Developer and UI Designer,{" "}
-            </h2>
+            <h2 className="h3 text-blue-500"> Full-Stack Developer </h2>
 
             <p className="max-w-[500px] mb-9 text-white/90">
               combining creativity with technical expertise to create functional
