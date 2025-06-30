@@ -27,8 +27,8 @@ const Home = () => {
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <a
-                href="/LucasAnselmoCurriculumVitae.pdf"
-                download="LucasAnselmoCurriculumVitae.pdf"
+                href="/LucasAnselmoCurriculumVitae_en_us.pdf"
+                download="LucasAnselmoCurriculumVitae_en_us.pdf"
                 aria-label="Download CV"
               >
                 <Button variant="primary">
