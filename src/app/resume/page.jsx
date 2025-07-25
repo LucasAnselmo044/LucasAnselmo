@@ -25,7 +25,7 @@ const about = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "1+ Year",
+      fieldValue: "2 Years",
     },
     {
       fieldName: "Nationality",
@@ -52,7 +52,7 @@ const experience = {
   description: "My works at the moment.",
   items: [
     {
-      company: "DiagMax",
+      company: "Fleury Group",
       position: "Admin area",
       duration: "2024 - Present",
     },
@@ -69,6 +69,11 @@ const education = {
       institution: "Uninassau",
       degree: "Systems Analysis and Development",
       duration: "2023 - 2024",
+    },
+    {
+      institution: "Uninassau",
+      degree: "Postgraduate in Software Testing and Quality",
+      duration: "2025-2026",
     },
     {
       institution: "Udemy",
